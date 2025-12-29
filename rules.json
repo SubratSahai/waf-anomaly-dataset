@@ -1,0 +1,77 @@
+{
+    "generated_at": "2025-12-28T16:48:12.637270",
+    "model": "IsolationForest",
+    "total_rules": 7,
+    "rules": [
+        {
+            "rule_id": "RULE_SQL_INJECTION_001",
+            "type": "SQL_INJECTION",
+            "condition": "has_sql_injection == 1",
+            "action": "BLOCK",
+            "severity": "HIGH",
+            "trigger_count": 395,
+            "confidence": 0.053,
+            "description": "Auto-generated rule for detecting sql injection attacks"
+        },
+        {
+            "rule_id": "RULE_XSS_002",
+            "type": "XSS",
+            "condition": "has_xss == 1",
+            "action": "BLOCK",
+            "severity": "HIGH",
+            "trigger_count": 198,
+            "confidence": 0.026,
+            "description": "Auto-generated rule for detecting xss attacks"
+        },
+        {
+            "rule_id": "RULE_PATH_TRAVERSAL_003",
+            "type": "PATH_TRAVERSAL",
+            "condition": "has_path_traversal == 1",
+            "action": "BLOCK",
+            "severity": "HIGH",
+            "trigger_count": 171,
+            "confidence": 0.023,
+            "description": "Auto-generated rule for detecting path traversal attacks"
+        },
+        {
+            "rule_id": "RULE_BURST_TRAFFIC_004",
+            "type": "BURST_TRAFFIC",
+            "condition": "burst_indicator == 1",
+            "action": "BLOCK",
+            "severity": "MEDIUM",
+            "trigger_count": 462,
+            "confidence": 0.062,
+            "description": "Auto-generated rule for detecting burst traffic attacks"
+        },
+        {
+            "rule_id": "RULE_HIGH_ENTROPY_005",
+            "type": "HIGH_ENTROPY",
+            "condition": "high_entropy == 1",
+            "action": "BLOCK",
+            "severity": "MEDIUM",
+            "trigger_count": 569,
+            "confidence": 0.076,
+            "description": "Auto-generated rule for detecting high entropy attacks"
+        },
+        {
+            "rule_id": "RULE_HIGH_FREQUENCY_006",
+            "type": "HIGH_FREQUENCY",
+            "condition": "high_frequency == 1",
+            "action": "BLOCK",
+            "severity": "MEDIUM",
+            "trigger_count": 761,
+            "confidence": 0.101,
+            "description": "Auto-generated rule for detecting high frequency attacks"
+        },
+        {
+            "rule_id": "RULE_ERROR_ABUSE_007",
+            "type": "ERROR_ABUSE",
+            "condition": "is_error == 1",
+            "action": "BLOCK",
+            "severity": "LOW",
+            "trigger_count": 764,
+            "confidence": 0.102,
+            "description": "Auto-generated rule for detecting error abuse attacks"
+        }
+    ]
+}
